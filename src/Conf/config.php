@@ -23,5 +23,5 @@ return [
     //显示类型，有json和html两种
     'debug_show_type' => 'html',
     //debug strace回流信息条数
-    'debug_strace_num'  =>  10,
+    'debug_strace_num'  =>  20,
 ];
