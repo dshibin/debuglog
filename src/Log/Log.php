@@ -64,7 +64,7 @@ class Log
      */
     public function LogStrace(): ?bool
     {
-        foreach (array_slice(debug_backtrace(), -intval(Configs::getInstance()->get('debug_strace_num'))) as $strace) {
+        foreach (array_slice(debug_backtrace(), 0, intval(Configs::getInstance()->get('debug_strace_num'))) as $strace) {
             if (!$this->Log('strace', 'strace', 0, 0, $strace)) {
                 return false;
             }
